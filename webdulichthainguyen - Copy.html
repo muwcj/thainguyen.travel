@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Du lịch Thái Nguyên</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f0f0f0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #2e7d32, #66bb6a);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      animation: fadeIn 2s;
+    }
+    nav {
+      background: #388e3c;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+    .location, .tour {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .location:hover, .tour:hover {
+      transform: translateY(-5px);
+    }
+    .location img, .tour img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Khám phá Du lịch Thái Nguyên</h1>
+    <p>Thiên nhiên tươi đẹp - Văn hóa đặc sắc - Trải nghiệm khó quên</p>
+    <img src="https://cdn-media.sforum.vn/storage/app/media/ctvseo_MH/%E1%BA%A3nh%20%C4%91%E1%BA%B9p%20Th%C3%A1i%20Nguy%C3%AAn/anh-dep-thai-nguyen-6.jpeg" alt="Thái Nguyên tổng quan" style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 10px; margin-top: 15px;">
+  </header>
+
+  <nav>
+    <a href="#diadiem">Địa điểm nổi bật</a>
+    <a href="#tour">Tour du lịch</a>
+    <a href="#amthuc">Ẩm thực</a>
+    <a href="#bando">Bản đồ</a>
+    <a href="#lienhe">Liên hệ</a>
+  </nav>
+
+  <section id="diadiem">
+    <h2>Địa điểm du lịch nổi bật</h2>
+
+    <div class="location">
+      <h3>Hồ Núi Cốc</h3>
+      <p>Một địa điểm du lịch Thái Nguyên phải nhắc đến là Hồ Núi Cốc toạ lạc tại phía nam huyện Đại Từ, cách trung tâm thành phố Thái Nguyên tầm 16km. Nơi đây là một thắng cảnh thiên nhiên tuyệt đẹp và gắn liền với truyền thuyết thú vị về chàng Cốc nàng Công.</p>
+      <img src="https://cdn-media.sforum.vn/storage/app/media/ctvseo_MH/%E1%BA%A3nh%20%C4%91%E1%BA%B9p%20Th%C3%A1i%20Nguy%C3%AAn/anh-dep-thai-nguyen-5.jpg" alt="Hồ Núi Cốc">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118734.21072365135!2d105.61064325865!3d21.568581994234773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134dbe2bf2c17b7%3A0x64e68f87161a12b8!2zQ8O0bmcgVmnDqm4gTsaw4bubYyBI4buTIE7DumkgQ-G7kWM!5e0!3m2!1svi!2s!4v1749708547341!5m2!1svi!2s"></iframe>
+    </div>
+
+    <div class="location">
+      <h3>Bảo tàng Văn hóa các Dân tộc Việt Nam</h3>
+      <p>Cách Thủ đô Hà Nội khoảng 80km, Bảo tàng nằm ở số 1 Đội Cấn, TP. Thái Nguyên. Thành lập năm 1960, đây là một trong 7 bảo tàng quốc gia, lưu giữ giá trị văn hóa của 54 dân tộc Việt Nam.</p>
+      <img src="https://thainguyen.dcs.vn/uploads/dat-nguoi-thai-nguyen/2023_05/image-20230510092951-2.jpeg" alt="Bảo tàng Văn hóa">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8084968219437!2d105.79616047379756!3d21.040347187383283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313526f3e265cd33%3A0xf159aa501d72db31!2zQuG6v24gdOG6oW5nIFZhbiBo4bqhYyBjw6FjIGPhuqdjIGTDoW4gdOG7pyBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1749708790000!5m2!1svi!2s"></iframe>
+    </div>
+
+    <div class="location">
+      <h3>Đồi chè Tân Cương</h3>
+      <p>Nhắc đến Thái Nguyên là nhắc đến đặc sản chè. Đồi chè Tân Cương thu hút khách bởi cảnh sắc xanh mát, yên bình và cơ hội trải nghiệm làm chè thú vị.</p>
+      <img src="https://63stravel.com/s3_amazon/673ec282-d4ed-430a-84b7-5ffafd956455-doi-che-tan-cuong-32jpg.jpg" alt="Đồi chè Tân Cương">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118733.9823485734!2d105.61064287756291!3d21.56886078138411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134df6e74288e73%3A0x6a1c9eb56b7a6bee!2zS2jDtG5nIGdpYW4gdsSDbiBow7NhIFRyw6AgVMOibiBDxrDGoW5n!5e0!3m2!1svi!2s!4v1749708639896!5m2!1svi!2s"></iframe>
+    </div>
+
+    <div class="location">
+      <h3>Hang Phượng Hoàng – Suối Mỏ Gà</h3>
+      <p>Hang Phượng Hoàng nằm ở độ cao 500m với 3 tầng hang kỳ thú: Hang Dơi, Hang Sáng, Hang Tối. Không khí mát mẻ, nước trong veo cùng bờ cát trắng và những nhũ đá tự nhiên độc đáo tạo nên vẻ đẹp kỳ ảo.</p>
+      <img src="https://gaohouse.vn/wp-content/uploads/2024/03/khu-du-lich-hang-phuong-hoang-8-1.jpg" alt="Hang Phượng Hoàng">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d474242.5932306866!2d105.5410623734375!3d21.779476900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31353504298c0951%3A0xce68344fe1b6cc77!2zS2h1IER1IEzhu4tjaCBIYW5nIFBoxrDhu6NuZyBIb8Ogbmc!5e0!3m2!1svi!2s!4v1749708428307!5m2!1svi!2s"></iframe>
+    </div>
+
+  <section id="tour">
+    <h2>Các tour du lịch hấp dẫn</h2>
+
+    <div class="tour">
+      <h3>Tour 1: Khám phá Hồ Núi Cốc (1 ngày)</h3>
+      <ul>
+        <li>Tham quan hồ, đi thuyền</li>
+        <li>Thưởng thức đặc sản cá hồ</li>
+        <li>Tham gia công viên nước và khu vui chơi</li>
+      </ul>
+      <img src="https://cdn-media.sforum.vn/storage/app/media/ctvseo_MH/%E1%BA%A3nh%20%C4%91%E1%BA%B9p%20Th%C3%A1i%20Nguy%C3%AAn/anh-dep-thai-nguyen-5.jpg" alt="Tour Hồ Núi Cốc">
+    </div>
+
+    <div class="tour">
+      <h3>Tour 2: Hành trình văn hóa Thái Nguyên (2 ngày 1 đêm)</h3>
+      <ul>
+        <li>Thăm bảo tàng Văn hóa các Dân tộc Việt Nam</li>
+        <li>Giao lưu văn nghệ dân tộc</li>
+        <li>Thưởng thức ẩm thực đặc sản địa phương</li>
+      </ul>
+      <img src="https://thainguyen.dcs.vn/uploads/dat-nguoi-thai-nguyen/2023_05/image-20230510092951-1.png" alt="Tour văn hóa">
+    </div>
+
+    <div class="tour">
+      <h3>Tour 3: Trải nghiệm đồi chè Tân Cương (nửa ngày)</h3>
+      <ul>
+        <li>Tham quan và chụp ảnh đồi chè</li>
+        <li>Trải nghiệm hái và sao chè</li>
+        <li>Thưởng thức trà truyền thống</li>
+      </ul>
+      <img src="https://gaohouse.vn/wp-content/uploads/2024/03/doi-che-tan-cuong-1.jpg" alt="Tour đồi chè Tân Cương">
+    </div>
+  </section>
+
+  <section id="amthuc">
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ẩm thực đặc sắc Thái Nguyên</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2d3436;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #0984e3;
+    }
+
+    .card p {
+      color: #2f3542;
+      line-height: 1.6;
+    }
+
+    /* Chatbot button fixed */
+    #preny-bot-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+   <h1>Ẩm thực đặc sắc Thái Nguyên</h1>
+  <div class="container">
+    <!-- Bánh chưng Bờ Đậu -->
+    <div class="card">
+      <img src="https://baothainguyen.vn/file/e7837c027f6ecd14017ffa4e5f2a0e34/012024/a1_20240117090300.png" alt="Bánh Chưng Bờ Đậu" />
+      <div class="card-content">
+        <h2>Bánh Chưng Bờ Đậu</h2>
+        <p>
+          Bánh chưng Bờ Đậu không sử dụng khuôn nhưng vẫn đạt được hình dáng "vuông thành sắc cạnh", từng chiếc bánh đều tăm tắp và đồng đều như nhau. 
+          Và bí quyết để làm nên hương vị "danh bất hư truyền" của bánh chưng Bờ Đậu là sự kết hợp của loại gạo nếp dẻo thơm nổi tiếng từ vùng Định Hóa.
+        </p>
+      </div>
+    </div>
+
+    <!-- Trà Móc Câu -->
+    <div class="card">
+      <img src="https://baothainguyen.vn/file/e7837c027f6ecd14017ffa4e5f2a0e34/012024/a2_20240117090337.jpg" alt="Trà Móc Câu Thái Nguyên" />
+      <div class="card-content">
+        <h2>Trà Móc Câu Thái Nguyên</h2>
+        <p>
+          Trà Móc Câu Thái Nguyên là một trong những đặc sản trà nổi tiếng của Việt Nam. Thái Nguyên được biết đến với địa hình trung du với nhiều đồi thấp, 
+          tạo ra điều kiện lý tưởng cho việc trồng trà chất lượng cao.
+        </p>
+      </div>
+    </div>
+  </div>
+
+<section id="bando">
+  <h3>Bản đồ du lịch Thái Nguyên</h3>
+    <div style="width: 100%; height: 400px; margin-top: 15px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118727.00424077992!2d105.8034897!3d21.577377600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313526e41a2f48ff%3A0x9af085049fb0466f!2zVHAuIFRow6FpIE5ndXnDqm4sIFRow6FpIE5ndXnDqm4!5e0!3m2!1svi!2s!4v1749707760530!5m2!1svi!2s"         
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
+  <section id="lienhe">
+    <h2>Liên hệ</h2>
+    <p>📞 Hotline: 0984 900 691</p>
+    <p>📧 Email: hongthptsongcong@gmail.com</p>
+    <p>📍 Địa chỉ: THPT SÔNG CÔNG, tỉnh Thái Nguyên</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Du lịch Thái Nguyên. Thiết kế bởi 4BigBrain - Trần Hoài.
+  </footer>
+
+</body>
+</html>
